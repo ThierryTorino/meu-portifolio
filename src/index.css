@@ -1,2 +1,18 @@
-@import "tailwindcss"
+@import "tailwindcss";
+@font-face {
+    font-family: "ChangaOne";
+    src: url("./fonts/ChangeOne/ChangaOne-Regular.ttf");;
+}
 
+@theme{
+    --font-changaOne: ChangaOne, "sans-serif";
+}
+
+@keyframes piscar{
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+.animate-piscar{
+    animation: piscar 1s infinite;
+}
