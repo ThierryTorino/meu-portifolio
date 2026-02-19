@@ -2,7 +2,7 @@ import { BsLightningChargeFill } from "react-icons/bs";
 
 function NavBar(){
     return(
-        <nav>
+        <nav className="sticky top-0 z-50 bg-zinc-950/50">
             <div className="flex justify-between p-3 font-changaOne">
                 <h1 className="text-zinc-100 flex gap-3"><BsLightningChargeFill className="items-center text-violet-500 w-5 h-5"/>Thierry Torino</h1>
                 <ul className="flex gap-3 text-zinc-100 ">
