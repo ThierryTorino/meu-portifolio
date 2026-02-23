@@ -9,18 +9,16 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-
-
 function Resume(){
     const tecnologias = [
         {nome: "JavaScript", cor: "bg-yellow-500", icone: <IoLogoJavascript/>},
-        {nome: "React", cor: "bg-yellow-500", icone: <FaReact/>},
-        {nome: "Cpp", cor: "bg-yellow-500", icone: <TbBrandCpp/>},
-        {nome: "Git", cor: "bg-yellow-500", icone: <FaGitAlt/>},
-        {nome: "Tailwind", cor: "bg-yellow-500", icone: <RiTailwindCssFill/>},
-        {nome: "Html", cor: "bg-yellow-500", icone: <FaHtml5/>},
-        {nome: "Css", cor: "bg-yellow-500", icone: <FaCss3/>},
-        {nome: "GitHub", cor: "bg-yellow-500", icone: <FaGithub/>}
+        {nome: "React", cor: "bg-cyan-400", icone: <FaReact/>},
+        {nome: "Cpp", cor: "bg-blue-500", icone: <TbBrandCpp/>},
+        {nome: "Git", cor: "bg-orange-500", icone: <FaGitAlt/>},
+        {nome: "Tailwind", cor: "bg-cyan-500", icone: <RiTailwindCssFill/>},
+        {nome: "Html", cor: "bg-orange-500", icone: <FaHtml5/>},
+        {nome: "Css", cor: "bg-blue-500", icone: <FaCss3/>},
+        {nome: "GitHub", cor: "bg-zinc-700", icone: <FaGithub/>}
     ]
 
     return(
@@ -35,55 +33,18 @@ function Resume(){
 
                     <button className="text-white p-8 md:p-10 ml-20 bg-violet-500 w-148 rounded-2xl gap-10 mt-5">VER PROJETOS</button>
                 </div>
+
                 <div className="flex flex-col mr-20 justify-center items-center gap-5">
                     <h2 className="text-white font-changaOne text-5xl">Tecnologias</h2>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-                        <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full hover:bg-white/10 hover:border-yellow-400 hover:scale-105 transition-all cursor-default shadow-lg">
-                            <IoLogoJavascript className="text-yellow-400 text-2xl"/>
-                            <span className="text-white font-medium text-lg">JavaScript</span>
-                        </div>
-
-                        <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full hover:bg-white/10 hover:border-cyan-400 hover:scale-105 transition-all cursor-default shadow-lg">
-                            <FaReact className="text-cyan-400 text-2xl"/>
-                            <span className="text-white font-medium text-lg">React.js</span>
-                        </div>
-
-                        <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full hover:bg-white/10 hover:border-blue-500 hover:scale-105 transition-all cursor-default shadow-lg">
-                            <TbBrandCpp className="text-blue-500 text-2xl"/>
-                            <span className="text-white font-medium text-lg">C++</span>
-                        </div>
-
-                        <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full hover:bg-white/10 hover:border-orange-500 hover:scale-105 transition-all cursor-default shadow-lg">
-                            <FaGitAlt className="text-orange-500 text-2xl"/>
-                            <span className="text-white font-medium text-lg">Git</span>
-                        </div>
-
-                        <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full hover:bg-white/10 hover:border-cyan-500 hover:scale-105 transition-all cursor-default shadow-lg">
-                            <RiTailwindCssFill className="text-cyan-500 text-2xl"/>
-                            <span className="text-white font-medium text-lg">Tailwind</span>
-                        </div>
-
-                        <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full hover:bg-white/10 hover:border-orange-600 hover:scale-105 transition-all cursor-default shadow-lg">
-                            <FaHtml5 className="text-orange-600 text-2xl"/>
-                            <span className="text-white font-medium text-lg">HTML5</span>
-                        </div>
-
-                        <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full hover:bg-white/10 hover:border-blue-600 hover:scale-105 transition-all cursor-default shadow-lg">
-                            <FaCss3 className="text-blue-600 text-2xl"/>
-                            <span className="text-white font-medium text-lg">CSS3</span>
-                        </div>
-
-                        <div className="flex items-center gap-3 bg-white/5 border border-white/10 px-5 py-3 rounded-full hover:bg-white/10 hover:border-zinc-800 hover:scale-105 transition-all cursor-default shadow-lg">
-                            <FaGithub className="text-zin-800 text-2xl"/>
-                            <span className="text-white font-medium text-lg">GitHub</span>
-                        </div>
+                    <ul className="text-white grid grid-cols-2 gap-4">
+                        {tecnologias.map((tech) =>{
+                            return(
+                                <li className={`${tech.cor}`} key={tecnologias.nome}>{tech.icone}{tech.nome}</li>
+                            )
+                        })}
                     </ul>
                 </div>
             </div>
-
-            
-
         </section>
     )
 }
