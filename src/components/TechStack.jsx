@@ -11,8 +11,8 @@ import { FaCss3 } from "react-icons/fa";
 function TechStack(){
     return(
         <div className="overflow-hidden py-5">
-            <section className="bg-transparent -rotate-3 text-7xl">
-            <Marquee autoFill={true} speed={200} gradient={true} gradientColor="#09090b">
+            <section className="bg-transparent rotate-0 text-7xl">
+            <Marquee autoFill={true} speed={200} gradient={true} gradientColor="#000">
                 <h1 className="text-white mx-5"><FaReact/></h1>
                 <h1 className="text-white mx-5"><IoLogoJavascript/></h1>
                 <h1 className="text-white mx-5"><TbBrandCpp/></h1>
