@@ -9,7 +9,7 @@ function Footer() {
                     <FaGithub />
                 </a>
                 
-                <a href="LINK_DO_SEU_LINKEDIN_AQUI" target="_blank" rel="noreferrer" className="hover:text-violet-500 hover:scale-110 transition-all cursor-pointer">
+                <a href="https://linkedin.com/in/thierry-torino" target="_blank" rel="noreferrer" className="hover:text-violet-500 hover:scale-110 transition-all cursor-pointer">
                     <FaLinkedin />
                 </a>
             </div>
