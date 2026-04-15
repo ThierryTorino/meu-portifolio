@@ -27,10 +27,24 @@ const animacaoCard = {
 
     useEffect(() =>{
         fetch('https://api.github.com/users/ThierryTorino/repos')
-            .then(resposta => resposta.json()) // Transforma a resposta da internet em JSON
+            .then(resposta => {
+                
+                if (!resposta.ok) {
+                    throw new Error(`Erro na API do GitHub: ${resposta.status}`);
+                }
+                return resposta.json();
+            }) 
             .then(dados => {
-                console.log("Olha o que veio do GitHub:", dados); // Pra gente espiar no F12
-                setMeusRepositorios(dados); // Salva os dados na memória do React!
+                console.log("Olha o que veio do GitHub:", dados);
+                
+                if (Array.isArray(dados)) {
+                    setMeusRepositorios(dados);
+                } else {
+                    console.error("O formato dos dados não é um array:", dados);
+                }
+            })
+            .catch(erro => {
+                console.error("Ops, deu erro ao buscar os repositórios:", erro);
             });
     }, []);
 
