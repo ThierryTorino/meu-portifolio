@@ -69,7 +69,9 @@ function Resume(){
                     <div>
                         <h2 className="text-3xl font-bold text-white mb-6">Quem sou eu?</h2>
                         <p className="text-zinc-300 text-lg leading-relaxed">
-                            Estudante de Ciências da Computação e desenvolvedor focado no ecossistema <span className="text-yellow-500 font-bold">JavaScript</span> / <span className="text-cyan-500 font-bold">Typescript</span>. Buscando me aprofundar em tecnologias modernas como <span className="text-cyan-400 font-bold">React.js</span>. Busco minha primeira experiência na área, para me desenvolver profissionalmente, aplicar minhas habilidades e me aprimorar cada vez mais.
+                            Sou estudante de <span className="text-violet-400 font-bold">Ciência da Computação</span> e um desenvolvedor movido pelo desafio constante de aprender. Minha estratégia atual é dominar profundamente o <span className="text-cyan-400 font-bold">React</span> com <span className="text-yellow-500 font-bold">JavaScript</span> puro, construindo uma base sólida de fundamentos antes de dar o próximo passo para o <span className="text-blue-500 font-bold">TypeScript</span> e <span className="text-zinc-100 font-bold">Next.js</span>.
+                            <br/><br/>
+                            Atualmente, busco minha primeira oportunidade como <span className="text-violet-400 font-bold">Estágio</span> ou <span className="text-violet-400 font-bold">Dev Júnior</span>, pronto para integrar uma equipe, entregar código de qualidade e evoluir na prática.
                         </p>
                     </div>
                     
